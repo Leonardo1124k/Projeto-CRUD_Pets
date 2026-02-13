@@ -27,6 +27,11 @@ public class PetsService {
         }
     }
 
+//    public Pet getPet(Long id) {
+//        Long x = id;
+//        return petsRepository.findById(id).orElseThrow();
+//    }
+
 
     public void updatePet(Pet pet, Long id) {
         Pet petEntity = petsRepository.findById(id).orElseThrow(() ->
